@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    background: linear-gradient(rgba(10,10,10,.8), rgba(10,10,10,.8)), url(./images/bgr.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #d2d2d2;
+    filter: blur(.5);
+    font-family:Poppins, Robaoto, san-serif;
+}
+.main-header{
+    background: linear-gradient(rgba(10,10,10,.3), rgba(10,10,10,.3)), url(./images/head-bgr.jpg);
+    background-position: bottom;
+    background-size: cover;;
+    height: 7em;
+    padding: .4em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: all .6s linear;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: .6em 1.3em .8em .4em;
+}
+.fa-solid{
+    font-size: 2em;
+    font-weight: light;
+    color: white;
+}
+.search-inpt-main{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,0,0,.68);
+    justify-content: center;
+    z-index: 2;
+}
+
+.search-inpt-inner{
+     margin-top: 1.8em;
+     background-color: transparent;
+     border-radius: .2em;
+}
+.search-inpt-inner input{
+    height: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1 px solid black;
+}
+.search-inpt-inner input:focus{
+    outline: none;
+}
+.search-inpt-inner button{
+    margin-left: .4em;
+    height: 2em;
+    font-weight: bold;
+    color: #000211;
+}
+.efwc-head{
+    display: inline-block;
+    margin-top: 5.8em;
+    font-size: .75em;
+    transition: all .6s linear;
+}
+#cancel-srch{
+    font-size: 1.8em;
+    color: white ;
+    margin-left: .3em;
+    vertical-align: bottom;
+    margin-bottom:-.2;
+}
+.srch-anim{
+    animation: rotate-srch-anim .15s infinite forwards linear;
+}
+@keyframes rotate-srch-anim{
+    0%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logo-con{
+    width: 99%;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    margin-top: -.2em;
+    z-index:-2;
+}
+
+img.ecwa-logo{
+    width: 4em;
+    position: absolute;
+    filter: opacity(.35);
+}
+
+.menu-con-main{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: menu .6s 1 forwards linear;
+    justify-content: right;
+    z-index: 3;
+}
+@keyframes menu{
+    10%{
+        background-color: rgba(20,0,0,.3);
+        right: -50%;
+    }
+    100%{
+        background-color: rgba(20,0,0,.85);
+        right: 0;
+    }
+}
+.menu-con-inner{
+    max-width: contain;
+    max-height: contain;
+    text-align: left;
+    padding: 1.5em;
+}
+.menu-con-inner ul{
+    padding: 0;
+    margin-top: 5em;
+    color: white;
+}
+.ul-icon{
+    font-size: .8em;
+    margin-right: .2em;
+    margin-left: .4em;
+}
+.menu-con-inner li{
+    list-style-type: none;
+    margin-top: 1.2em;
+    font-size: 1.1em;
+}
+.menu-con-inner a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+#cancelMenu{
+    font-size: 2.6em;
+    margin: 0;
+    float: right;
+    color: white;
+}
+
+
+
+
+
+/*Main Page*/
+
+
+.main{
+    margin: 10em 1em 3em 1em;
+    text-align: center;    
+}
+.main p, main li{
+    font-size: 1.1em;
+}
+.main h1{
+    font-size: 1.8em;
+}
+.theme-year{
+    font-weight: bold;
+}
+div.theme-con{
+    color:white;
+    padding:.4em;
+    border-radius: .5em;
+    border: 1px solid white;
+    
+}
+.theme-body{
+    font-weight: bold;
+    display: inline-block;
+}
+.anthem-span{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.ecwa-aim ul{
+    text-align: left;
+    padding: 1.5em;
+    
+}
+.ecwa-aim li{
+    margin-bottom: 1.5em;
+}
+.description-p{
+    font-size: .9em !important;
+}
+.footer-main-con{
+    text-align: center;
+    background: #000311;
+    margin-top: .6em;
+    padding: .2em;
+    color: #ada400;
+}
+.social-icon{
+    font-size: 2.2em;
+    margin: 0em .3em 0em .3em;
+    color: #ada400;
+}
+
+/*Announcements page*/
+.main-announcement{
+    margin: 8em .7em 3em .7em;
+}
+.top-buttons-con{
+    background-color: transparent !important;
+    display: flex;
+    justify-content: space-between;
+}
+.top-buttons-con div{
+    background-color: transparent !important;
+}
+.top-buttons-con button{
+    font-weight: bold;
+    font-size: .9em;
+    padding: .2em 1em;
+    height: 2em;
+    border: none;
+    border-radius: 5em;
+    background-color: black;
+    color: white;
+}
+.main-announcement div{
+    padding: .2em;
+    margin-bottom: 1.2em;
+    background-color: black;
+}
+.main-announcement h2{
+    text-align: center;
+    margin: 1em 0 0 0;
+    text-decoration: underline;
+}
+.main-announcement p{
+    padding:.7em;
+}
+.main-announcement span{
+    font-size: .74em;
+    padding: 0 .3em;
+}
+
+/* Bible page*/
+.bible-main-body{
+    background: whitesmoke;
+    color: black;
+}
+.recent-main-con{
+    text-align: left;
+    margin-bottom: 4em;
+    margin-top: -4em;
+}
+.recent-ul-con{
+    height: 80px;
+    font-weight: bold;
+    font-size: .85em;
+}
+.recent-ul-con ul{
+    padding: 0;
+    margin-left: 1em;
+}
+.recent-ul-con li{
+    list-style-type: none;
+    margin-bottom: .4em;
+    text-decoration: underline;
+}
+.warning-txt{
+    visibility: hidden;
+}
+.bible-inner-con{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    
+}
+.book-con input{
+    font-weight: bold;
+}
+.bible-inner-con input{
+    width: 6em;
+    font-size: 1em;
+    height: 1.2em;
+}
+.bible-inner-con .chapter-con, .verse-con{
+    align-self: flex-end;
+}
+.bible-inner-con label{
+    font-weight: bold;
+}
+.bible-main button{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: .4em 1em;
+    border: none;
+    border-radius: .1em;
+    background: #053044;
+    color: white;
+}
+
+
+
+
+/*Words Page*/
+
+.word-main{
+    margin: 9em 1.6em 3em 1.3em;
+    font-family: Poppins, sans-serif;
+}
+.word-main h1,h2, h3, h4{
+    text-align: center;
+}
+.word-main span{
+    font-weight: bold;
+}
+
+/* ABOUT PAGE*/
+.about-main-body{
+    background: black !important;
+}
+.about-dev-con{
+    text-align: left;
+    margin: .4em 1em; 
+}
+.about-dev-con a{
+    color: white;
+}
+.about-dev-con .my-pic{
+    width: 115px;
+    border: 3px solid white;
+    margin-right: 1.5em;
+}
+.about-dev-con p:nth-child(2){
+    display: inline;
+}
+
+
+
+/* FEEDBACK PAGE*/
+.feedback-main{
+    margin: 8em 1.6em 3em 1.3em;
+    font-size: 1.1em;
+    font-family: Poppins, sans-serif;
+}
+.feed-back-form label{
+    font-weight: bold;
+}
+
+.feed-back-form .name-input{
+    height: 24px;
+    border: none;
+    width: 210px;
+    border-radius: .3em;
+    border: 1px solid #cf6f00;
+    font-size: .9em;
+    background-color: #dcdcdc;
+    font-family: Poppins, Roboto, san-serif;
+}
+
+.feed-back-form textarea{
+    height: 120px;
+    border: 1px solid #cf6f00;
+    width: 250px;
+    border-radius: .3em;
+    font-size: .9em;
+    background-color: #dcdcdc;
+    font-family: Poppins, Roboto, san-serif;
+}
+.feed-back-form textarea:focus, .name-input:focus{
+    outline: 1px solid #cf6f00;
+    font-size: .9em;
+}
+.submit-input{
+    background: linear-gradient(#df7f00, #7f1f00);
+    padding: .5em 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: .9em;
+    border: none;
+    border-radius: .3em;
+    margin-left: .5em;
+}
+
+
+
+/* UNAVAILABLE PAGE*/
+
+.unavailable-outer{
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.unavailable-inner {
+    align-self: center;
+}

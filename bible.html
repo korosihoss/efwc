@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='efwc.css'>
+    <script src="https://kit.fontawesome.com/8482dba9f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bible-main-body">
+    
+    <header>
+        
+        <div class="main-header" style="background:none;">
+            
+            <div class="header-inner">
+                
+                <div>
+                    
+                     <i class="fa-solid fa-magnifying-glass" id="search-icon" style="color: black;"></i>
+                     
+                      <div class="search-inpt-main">
+                          
+                          <div class="search-inpt-inner">
+                              
+                              <input type="text" id="inpt" placeholder="search hymn by name">
+                              <button onclick="searchHymn();">Search</button>
+                              
+                              <i class="fa-solid fa-xmark" id="cancel-srch"></i>
+                   
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  
+                  <div class="efwc-head">
+                      
+                      <h2 style="display: none;">
+                          Ecwa Family Worship Center
+                      </h2>
+                      
+                  </div>
+                  
+                  <div>
+                      
+                   <i class="fa-sharp fa-solid fa-bars" id="hamburger" style="color: black"></i>
+                   
+                   
+                      <div class="menu-con-main">
+                          
+                          <div class="menu-con-inner">
+                              
+                              <div>
+                                  
+                                  <i class="fa-solid fa-xmark" id="cancelMenu"></i>
+                                  
+                              </div>
+                              
+                              
+                              <ul> 
+                                                               
+                                  <li>
+                                      <i class="fa-solid fa-house ul-icon"></i>
+                                     
+                                      <a href="./index.html">Home</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-volume-low ul-icon"></i>
+                                      
+                                      <a href="./announcement.html">Announcement</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-book-bible ul-icon"></i>
+                                      
+                                      <a href="javascript: void(0);">King James Bible</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-music ul-icon"></i>
+                                      
+                                      <a href="javascript: void(0);" onclick="searchHymnInMenu();">Search Hymn</a>
+                                  </li>
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-church ul-icon"></i>
+                                      
+                                      <a href="./word.html">Words</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-satellite-dish ul-icon"></i>
+                                      
+                                      <a href="./live.html">Live</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-clock-rotate-left ul-icon"></i>
+                                      
+                                      <a href="./history.html">Our history</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-phone ul-icon"></i>
+                                      
+                                      <a href="./contact.html">Contact</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-globe ul-icon"></i>
+                                      
+                                      <a href="https://www.ecwausa.org">Go ecwausa.org</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-circle-info ul-icon"></i>
+                                      
+                                      <a href="./about.html">About site</a>
+                                  </li>
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-regular fa-comment-dots ul-icon"></i>
+                                      
+                                      <a href="./feedback.html">Feedback</a>
+                                  </li>
+                                  
+                                  
+                              </ul>
+                              
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+              
+        </div>
+        
+    </header>
+    
+    <main class="main">
+        
+        <div class="recent-main-con">
+            
+            <h2>Recent Readings</h2>
+            
+                <div class="recent-ul-con">
+                    
+                    <ul class="recent-ul">
+                        
+                    </ul>
+                    
+                </div>
+                
+        </div>
+        
+        <!-- warn a user to enter a book -->
+        
+        <p style="color: red;" class="warning-txt">
+            Please enter a valid book
+        
+        </p>
+        
+        <div class="bible-main">
+            
+            <h1 style="font-family: serif;">
+                King James Bible
+            </h1>
+            
+            <div class="bible-inner-con">
+                
+                
+                
+                <div class="chapter-con">
+                    
+                   <label for="chapter">
+                       Chapter
+                   </label> 
+                   
+                   <br>
+                   
+                   <input type="number" id="chapter" name="chapter" value="1">
+                   
+                </div>
+                
+                
+                
+                <div class="book-con">
+                   <label for="book">Enter Book</label>
+                   <br>
+                   <input type="text" id="book" name="book" value="Genesis">
+                </div>
+                
+                
+                
+                <div class="verse-con">
+                   <label for="verse">Verse</label>
+                   <br> 
+                   <input type="number" id="verse" name="verse" value="1">
+                </div>
+                
+                
+                
+            </div>
+            
+            <button onclick="getBible();">Read</button>
+            
+        </div>
+        
+    </main>
+   
+    <script src="efwc.js"></script>
+    
+</body>
+
+</html>

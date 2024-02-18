@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lan="en-US">
+<head>
+    <meta charset='utf-8'>
+    <title>efwc.com.ng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='efwc.css'>
+    <script src="https://kit.fontawesome.com/8482dba9f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header>
+        
+        <div class="main-header">
+            
+            <div class="header-inner">
+                
+                <div>
+                    
+                     <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                     
+                      <div class="search-inpt-main">
+                          
+                          <div class="search-inpt-inner">
+                              <input type="text" id="inpt" placeholder="search hymn by name">
+                              
+                              <button onclick="searchHymn();">
+                                  Search
+                                  
+                              </button>
+                              
+                              <i class="fa-solid fa-xmark" id="cancel-srch"></i>
+                   
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="efwc-head">
+                      
+                      <h2>
+                          Ecwa Family Worship Center
+                      </h2>
+                      
+                  </div>
+                  
+                  <div>
+                      
+                   <i class="fa-sharp fa-solid fa-bars" id="hamburger"></i>
+                   
+                      <div class="menu-con-main">
+                          
+                          <div class="menu-con-inner">
+                              
+                              <div>
+                                  
+                                  <i class="fa-solid fa-xmark" id="cancelMenu"></i>
+                                  
+                              </div>
+                              
+                              
+                              <ul>    
+                                        
+                                                            
+                                  <li>
+                                      <i class="fa-solid fa-house ul-icon"></i>
+                                      <a href="./index.html">Home</a>
+                                  </li>
+                                      
+                                      
+                                      
+                                  <li>
+                                      <i class="fa-solid fa-volume-low ul-icon"></i>
+                                      
+                                      <a href="./announcement.html">Announcement</a>
+                                      
+                                 </li>
+                                   
+                                   
+                                   
+                                  <li>
+                                      <i class="fa-solid fa-book-bible ul-icon"></i>
+                                      
+                                      <a href="./bible.html">King James Bible</a>
+                                  </li>
+                                  
+                                  
+                                      
+                                   <li>
+                                       <i class="fa-solid fa-music ul-icon"></i>
+                                       
+                                       <a href="javascript: void(0);" onclick="searchHymnInMenu();">Search Hymn</a>
+                                       
+                                   </li>
+                                   
+                                   
+                                   
+                                  <li>
+                                      <i class="fa-solid fa-church ul-icon"></i>
+                                      
+                                      <a href="./word.html">Words</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-satellite-dish ul-icon"></i>
+                                      
+                                      <a href="./live.html">Live</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-solid fa-clock-rotate-left ul-icon"></i>
+                                      
+                                      <a href="./history.html">Our history</a>
+                                  </li>
+                                      
+                                      
+                                      
+                                  <li>
+                                      <i class="fa-solid fa-phone ul-icon"></i>
+                                      
+                                      <a href="./contact.html">Contact</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                   <li>
+                                       <i class="fa-solid fa-globe ul-icon"></i>
+                                       
+                                       <a href="https://www.ecwausa.org">Go ecwausa.org</a>
+                                       
+                                   </li>
+                                   
+                                   
+                                   
+                                  <li>
+                                      <i class="fa-solid fa-circle-info ul-icon"></i>
+                                      
+                                      <a href="./about.html">About site</a>
+                                  </li>
+                                  
+                                  
+                                  
+                                  <li>
+                                      <i class="fa-regular fa-comment-dots ul-icon"></i>
+                                      
+                                      <a href="javascript:void(0);">Feedback</a>
+                                  </li>
+                                  
+                                  
+                              </ul>
+                              
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+              
+        </div>
+        
+    </header>
+    
+    <body>
+
+        <main class="feedback-main">
+            <h1 style="text-align: center;">User Feedback</h1>
+            
+            <div>
+                <p>
+                    We highly value your feedback as it helps us understand your needs better and improve our services. <br>Your input guides us in making meaningful enhancements to our webpage. Rest assured, we are committed to actively listening to your suggestions and continuously striving to enhance your experience.
+                </p>
+            </div>
+            
+            <br>
+            
+            <div>
+                
+                <form id="feedbackForm"class="feed-back-form">
+                    
+                    <label for="name">Enter your name</label>
+                    <br>
+                    
+                    <input type="text" name="name" id="name" placeholder="Name" class="name-input">
+                    
+                    <br>
+                    <br>
+                    <label for="message">Feedback</label>
+                    <br>
+                    
+                    <textarea id="message" name="message" placeholder="Message" rows="2" cols="8"></textarea>
+                    
+                    <p id="serverStatus"style="color: red; visibility: hidden;">Server Not Available</p>
+                    
+                    <input type="submit" value="Submit"class="submit-input">
+                </form>
+                
+            </div>
+            
+        </main>
+        
+         
+    <footer>
+        <div class="footer-main-con">
+            <div>
+                <p>Join or Follow us &#64;</p>
+                
+                <a href="">
+                    <i class="fa-brands fa-square-facebook social-icon">
+                    </i>
+                </a>
+                
+                <a href="">
+                    <i class="fa-brands fa-square-x-twitter social-icon">
+                    </i>
+                </a>
+                
+                <a href="">
+                    <i class="fa-brands fa-square-whatsapp social-icon">
+                    </i>
+                </a>
+                
+             </div>
+             
+        </div>
+        
+    </footer>
+        
+        
+        <script src="efwc.js"></script>
+        
+    </body>
+    
+    </html>
+    
